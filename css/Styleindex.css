@@ -1,0 +1,152 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Contenedor centrado */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header / Navegación */
+.site-header {
+  background-color: #2b2b2b; /* negro oscuro/gris */
+  color: #fff;
+  padding: 20px 0;
+}
+
+.site-header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #ddd;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #fff;
+  border-bottom: 2px solid #8b5e3c; /* marrón para hover */
+}
+
+/* Sección principal */
+.hero {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #e0e0e0; /* gris claro */
+  color: #2b2b2b;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Galería de imágenes */
+.gallery {
+  padding: 40px 0;
+}
+
+.gallery h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2b2b2b;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.image-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.image-item p {
+  color: #2b2b2b;
+  font-weight: bold;
+}
+
+.image-item:hover {
+  transform: translateY(-5px);
+  border-color: #8b5e3c; /* borde marrón al hover */
+}
+
+/* Footer */
+.site-footer {
+  background-color: #2b2b2b;
+  color: #bbb;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.site-footer .footer-info,
+.site-footer .footer-copy {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.site-footer p {
+  margin: 5px 0;
+}
+
+.site-footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
